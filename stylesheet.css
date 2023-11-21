@@ -46,3 +46,45 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+/*End of reset*/
+*{
+    font-family: 'Bebas Neue', 'Montserrat', 'Victor Mono';
+}
+nav a, nav span, menu li, #social li, footer{
+    font-family: 'Bebas Neue';
+    font-size: 20px;
+}
+h1{
+    font-family: 'Bebas Neue';
+    font-size: 40px;
+}
+h2{
+    font-family: 'Bebas Neue';
+    font-size: 30px;
+}
+h3{
+    font-family: 'Bebas Neue';
+    font-size: 25px;
+}
+p, dd, dt, li, nav, input{
+    font-family: 'Montserrat';
+    font-size: 16px;
+}
+body{
+    background-color: rgba(122, 191, 191, .5);
+    margin-left:20px;
+    margin-right:20px;
+}
+#main{
+    background-color: #F2F2F2;
+}
+#logo{
+    background:#EB5428;
+    width:40%;
+    display: flex;
+    justify-content: center;
+    
+}
+
+
+
