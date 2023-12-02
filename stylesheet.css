@@ -70,21 +70,24 @@ h3{
     font-family: 'Bebas Neue';
     font-size: 25px;
 }
-p, dd, dt, li, nav, input{
+p, dt, li, nav, input{
     font-family: 'Montserrat';
     font-size: 16px;
 }
 body{
     background-color: rgba(122, 191, 191, .5);
-    margin-left:20px;
-    margin-right:20px;
+}
+#wrapper{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 80%;
 }
 main{
-    background-color: #F2F2F2;
+    background-color: #f2f2f2;
+    padding-top:10px;
 }
 header{
-    background:#F2F2F2;
-    margin-bottom: 30px;
+    background:#f4f4f4;
     width:100%;
     display:flex;
     flex-direction: row;
@@ -105,6 +108,7 @@ header{
     text-align: center;
 }
 #signup{
+    background: #f4f4f4;
     padding-right:10px;
     text-align: center;
     align-content: center;
@@ -113,9 +117,375 @@ header{
 #avatar{
     border:none;
 }
-.search{
+form{
+    display:flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+}
+.container{
+    margin-right:200px;
+}
+#search-bar{
+    height:35px;
+    position: absolute;
+    border-color:#EB5428;
+}
+.searchsvg{
+    background-color: #EB5428;
+}
+.svg{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 80%;
+}
+#menusvg{
+    margin-top:30px;
+    text-align: center;
+}
+menu .svg{
+    display:inline-block;
+    padding-left:30px;
+    padding-right: 30px;
+}
+menu li{
+    list-style: none;
+    color:#EB5428;
+}
+.tacos{
+    width:100%;
+    height:80%;
+}
+#intro, .steps, .directions{
+    background-color: #F2F2F2;
+    text-align: left;
+    line-height:2em;
+}
+.steps h2, .directions h2{
+    text-align: center;
+    padding-top:15px;
+}
+tr{
+    display: flex;
+    justify-content: space-between;
+}
+tr td{
+    padding-left:20px;
+}
+th{
+    padding-left:20px;
+    font-weight: bold;
+}
+.steps li{
+    list-style-type:square;
+    margin-left:20px;
+}
+.directions span{
+    font-weight: bold;
+}
+.directions li{
+    list-style-type:decimal;
+    margin-left:20px;
+}
+.sides{
+    background-color: #7ABFBF;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 80%;
+}
+dl dt{
+    font-weight: bold;
+}
+dd, dt, dl h3, .dlsvg{
+    margin-left: auto;
+    margin-right: 0;
+    position: relative;
+    width:80px;
+    padding-right:30%;
+}
+.dlsvg{
+    display: flex;
+    flex-direction: row;
+    max-width: 50%;
+    top:0px;
+}
+.sides h2{
+    background-color: #7ABFBF;
+    padding-top:20px;
+    text-align: center;
+}
+.sidelist, .dlsvg, dl h3{
+    position: relative;
+    bottom:200px;
+}
+dl h3{
+    top:0px;
+    bottom:10px;
+}
+dl img{
+    margin-right: auto;
+    margin-left: 0;
+    width:50%;
+    height:50%;
     
 }
-
-
-
+#social ul{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 60%;
+    padding-left:20%;
+    padding-top:15px;
+}
+#social li{
+    padding:5px;
+}
+.connect{
+    margin-top:20px;
+}
+.connect li{
+    list-style: none;
+    color:#EB5428;
+}
+.connect, footer{
+    background-color: #F2F2F2;
+}
+footer img{
+    height:200px;
+    width:200px;
+    margin-bottom:10px;
+}
+footer, .connect{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 80%;
+}
+footer small{
+    display: block;
+    text-align: center;
+}
+@media  screen and (max-width:768px){
+    .nav{
+        width:0;
+        height:0;
+        overflow:hidden;
+    }
+}
+@media screen and (min-width:768px){
+    #burger{
+        width:0;
+        height:0;
+        overflow:hidden;
+    }
+    header{
+        height:200px;
+    }
+    #logo{
+        width:10%;
+        height:30%;
+        padding:5px;
+    }
+    #signup{
+        position: relative;
+        left:55%;
+        padding-top:5px;
+    }
+    #search-form{
+        position: absolute;
+        top:5px;
+        left:40%;
+    }
+    .nav img{
+        height:50px;
+        width:50px;
+    }
+    #nav ul{
+        display:grid;
+        grid-template-columns:1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        position:relative;
+        top:120px;
+        right:28%;
+        text-align: center;
+        grid-gap: 20px;
+        color:#EB5428;
+    }
+    h1{
+        margin-right:80%;
+        background-color: #f2f2f2;
+    }
+    #svgbg{
+        display:flex;
+        position: relative;
+        margin-top:0px;
+        width:80%;
+        justify-content: center;
+        top:70px;
+        background-color: rgba(242,242,242,0.2);
+    }
+    .svg{
+        padding:10px 20px 0px 0px;
+        display: block;
+    }
+    .details{
+        text-align: center;
+        margin-left:180px;
+    }
+    h2:nth-child(2 of .ing){
+        text-align: left;
+        padding:20px 50px 10px 5px;
+    }
+    #directions{
+        width:70%;
+        align-self: flex-end;
+    }
+    #ingcontainer{
+        display: flex;
+        flex-direction: row;
+        padding-left:20px;
+        padding-bottom: 20px;
+    }
+    .sides{
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 80%;
+        max-height:500px;
+    }
+    .sides h2{
+        padding-top: 5px;
+    }
+    .sides dl{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    .sides img{
+        width:80%;
+        height:80%;
+    }
+    .sidelist{
+        position: relative;
+        top:10px;
+        line-height: 15px;
+    }
+    #social ul{
+        max-width: 50%;
+        display: flex;
+        padding-left:25%; 
+    }
+    footer img{
+        position: relative;
+    }
+}
+@media screen and (min-width:1280px){
+    #search-form{
+        position: absolute;
+        top:130px;
+    }
+    #signup{
+        position: relative;
+        left:70%;
+    }
+    #menusvg h1{
+        display: block;
+        padding-left:50%;
+        margin-bottom:0;
+        width:200px;
+        padding-bottom:30px;
+    }
+    #nav{
+        position: relative;
+        left:80px;
+        bottom:115px;
+        font-weight: bold;
+    }
+    .tacos{
+        height:40%;
+        width:40%;
+        padding-left:150px;
+        position: relative;
+        bottom:450px;
+    }
+    #svgbg{
+        min-width: none;
+        background-color: rgba(0, 0, 0, 0.0);
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        right:32%;
+    }
+    .svg svg{
+        padding-bottom:40px;
+    }
+    #intro{
+        margin-right: 0;
+        max-width: 30%;
+        position:relative;
+        left:60%;
+        bottom:1090px;
+    }
+    table tr{
+        display: inline-block;
+        position: relative;
+        left:20px;
+    }
+    .detailcontainer{
+        background-color: black;
+        color:#71bfbf;
+    }
+    .directions{
+        margin-top: 0;
+        margin-bottom:60px;
+    }
+    .sides dl{
+        display: flex;
+        flex-direction: row;
+    }
+    .sides{
+        height:400px;
+        min-width: 80%;
+        display: flex;
+    }
+    .sides h2{
+        position: relative;
+        left:40%;
+    }
+    dl img{
+        height:40%;
+        width:40%;
+        position: relative;
+        top:60px;
+        right:195px;
+    }
+    dl{
+        width:50%;
+        height:50%;
+    }
+    .sidelist{
+        position: relative;
+        top:230px;
+        right:320px;
+    }
+    .sidelist dd{
+        display: flex;
+        width:100%;
+    }
+    .dlsvg{
+        max-width: 100%;
+        position: relative;
+        padding-left:0px;
+        margin-left:40px;
+        right:35px;
+    }
+    footer img{
+        position: relative;
+        right:40%;
+    }
+    footer small{
+        position: relative;
+        right: 22%;
+        bottom:150px;
+    }
+    #social ul{
+        position: relative;
+        left:20%;
+    }
+}
